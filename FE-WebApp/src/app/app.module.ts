@@ -24,7 +24,8 @@ import { RankingComponent } from './pages/ranking/ranking.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      
+      { path: 'ranking', component: RankingComponent }
+
     ])
   ],
   providers: [],
