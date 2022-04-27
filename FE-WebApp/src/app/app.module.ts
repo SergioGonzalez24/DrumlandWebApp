@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { RankingComponent } from './pages/ranking/ranking.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RankingComponent } from './pages/ranking/ranking.component';
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    RankingComponent
+    RankingComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { RankingComponent } from './pages/ranking/ranking.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'ranking', component: RankingComponent }
+      { path: 'ranking', component: RankingComponent },
+      { path: 'search', component: SearchComponent }
 
     ])
   ],
