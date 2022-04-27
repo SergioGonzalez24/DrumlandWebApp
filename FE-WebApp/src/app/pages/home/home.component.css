@@ -1,0 +1,21 @@
+.textInfo {
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    align-items:center;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 70px;
+    color: orange;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(9, 4, 63);
+}
