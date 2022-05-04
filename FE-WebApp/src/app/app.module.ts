@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { RankingComponent } from './pages/ranking/ranking.component';
 import { SearchComponent } from './pages/search/search.component';
 import { LoginComponent } from './pages/login/login.component';
+import { UserComponent } from './pages/user/user.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './pages/login/login.component';
     HomeComponent,
     RankingComponent,
     SearchComponent,
-    LoginComponent
+    LoginComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { LoginComponent } from './pages/login/login.component';
       { path: '', component: HomeComponent },
       { path: 'ranking', component: RankingComponent },
       { path: 'search', component: SearchComponent },
-      { path: 'login', component: LoginComponent }
+      { path: 'login', component: LoginComponent },
+      { path: 'user', component: UserComponent }
 
     ])
   ],

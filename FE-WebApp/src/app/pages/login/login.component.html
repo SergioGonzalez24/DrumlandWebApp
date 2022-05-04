@@ -5,36 +5,49 @@
                 <img src="./assets/img/ICON.svg" class="img-fluid" alt="" width="500" height="500">
             </div>
             <div class="col-lg-7 text-center py-5">
-                <img src="./assets/img/userlogin.svg" class="img-fluid" alt="" width="500" height="500" >
+                <img src="./assets/img/userlogin.svg" class="img-fluid" alt="" width="500" height="500">
 
                 <div class="offset-1 col-lg-10">
                     <!--CREACION DEL FORMULARIO Y LLAMADO AL TYPESCRIPT-->
-                    <form [formGroup]="form" (ngSubmit)="login()">
-                        <!--CONTENEDORES DE ESTILO PARA LOS INPUTS-->
-                        <div class="input-group Input-group-lg mb-3 log">
-                            <span class="input-group-text ">
-                                <!--LLAMADO A LOS ICONOS Y A SUS VALIDADORES-->
-                                <i class="fa-solid fa-user"></i>
-                            </span>
-                            <!--INPUT PARA EL USERNAME-->
-                            <input formControlName="username" type="text" class="form-control" placeholder="Username">
-                        </div>
+                    <div class="login">
+
+
+
+                        
+                        <form [formGroup]="form" action="login" (ngSubmit)="login()" method="GET">
                             <!--CONTENEDORES DE ESTILO PARA LOS INPUTS-->
-                        <div class="input-group Input-group-lg mb-2 log">
-                            <span class="input-group-text">
-                                <!--LLAMADO A LOS ICONOS Y A SUS VALIDADORES-->
-                                <i class="fa-solid fa-lock"></i>
-                            </span>
-                            <!--INPUT PARA EL PASSWORD-->
-                            <input formControlName="password" type="password" class="form-control" placeholder="Password">
-                        </div>
-            
-                        <!--BOTON PARA HACER SUBMIT-->
-                        <div class="d-grid gap-2 log">
-                            <button type="submit" class="btn btn-succes btn-lg accessbtn">Login</button>
-                        </div> 
-                            
-                    </form>
+                            <div class="input-group Input-group-lg mb-3 log">
+                                <span class="input-group-text ">
+                                    <!--LLAMADO A LOS ICONOS Y A SUS VALIDADORES-->
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+    
+                                <!--INPUT PARA EL USERNAME-->
+                                <input formControlName="username" type="text" class="form-control" placeholder="Username" required="required">
+    
+                            </div>
+    
+                                <!--CONTENEDORES DE ESTILO PARA LOS INPUTS-->
+                            <div class="input-group Input-group-lg mb-2 log">
+                                <span class="input-group-text">
+                                    <!--LLAMADO A LOS ICONOS Y A SUS VALIDADORES-->
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+    
+                                <!--INPUT PARA EL PASSWORD-->
+                                <input formControlName="passwordUser"  type="password" class="form-control" placeholder="Password" required="required">
+    
+                            </div>
+                
+                            <!--BOTON PARA HACER SUBMIT-->
+                            <div class="d-grid gap-2 log">
+                                <button type="submit" [disabled]="!form.valid" class="btn btn-succes btn-lg accessbtn">Login</button>
+                            </div> 
+                        </form>
+
+
+
+                      </div>
                 </div>
 
             </div>
