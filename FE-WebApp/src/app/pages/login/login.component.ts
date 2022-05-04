@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
 
   login(): void {
     console.log(this.form.value);
-    if(this.form.value.username == "solidBass3" && this.form.value.passwordUser == "Hampered+Autumn-Menaced.874"){
+    if(this.form.value.username == "solidBass3" && this.form.value.passwordUser == "123456789"){
       alert("Login Successful");
       window.location.href='/user';
     }
